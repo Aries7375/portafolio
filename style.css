@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap");
+:root {
+  --pricipal: #020403;
+  --paragraph: #adadad;
+  --titles: #ffffff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  background: var(--pricipal);
+  color: var(--titles);
+  font-family: "Rubik", sans-serif;
+}
+p {
+  color: var(--paragraph);
+}
+#menu-icon {
+  margin: 3rem 5rem;
+  position: relative;
+  z-index: 100;
+}
+#menu-icon i {
+  cursor: pointer;
+  vertical-align: top;
+  font-size: 4rem;
+  color: white;
+}
+
+.menu-list {
+  background: var(--pricipal);
+  box-shadow: 0.2rem 0 0.5rem 0.2rem #424242;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40rem;
+  transition: all 0.5s ease;
+  z-index: 50;
+}
+.menu-list ul {
+  padding: 10rem 0 2rem 0;
+  list-style: none;
+}
+.menu-list a {
+  color: var(--titles);
+  text-decoration: none;
+  display: inline-block;
+  width: 90%;
+}
+.menu-list ul li {
+  display: block;
+  font-size: 2.5rem;
+  padding: 1rem 5rem;
+}
+.menu-list ul li:hover {
+  background: #e91e63;
+  color: #2a2a2a;
+}
+.active {
+  transform: translate(-600px);
+}
+.opacity {
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+.no-scroll {
+  overflow: hidden;
+}
+/* ----------------info-about-------------- */
+.me {
+  height: 19rem;
+  /* border-radius: 8rem; */
+  margin-bottom: 3.5rem;
+}
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--paragraph);
+}
+#info-about {
+  text-align: center;
+}
+.icons {
+  display: flex;
+  justify-content: space-around;
+  width: 55%;
+  margin: auto;
+  margin-bottom: 6.5rem;
+}
+.info {
+  width: 80%;
+  margin: auto;
+}
+p {
+  font-size: 1.8rem;
+}
+.about-me {
+  padding: 0 2rem;
+}
+.sub-title {
+  padding-bottom: 2rem;
+}
+.start-title {
+  text-align: start;
+  padding-left: 3rem;
+}
+/* ------circunferencia------------ */
+
+.circunferencia {
+  width: 9.5rem;
+  position: absolute;
+  right: 0;
+}
+.circle1 {
+  max-width: 5.5rem;
+  overflow: hidden;
+}
+.circle2 {
+  left: -4rem;
+}
+.caja {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 7px;
+}
+
+.c1 {
+  height: 95px;
+  width: 95px;
+}
+.c2 {
+  height: 80px;
+  width: 80px;
+}
+.c3 {
+  height: 65px;
+  width: 65px;
+}
+
+.habili-icons {
+  text-align: center;
+  width: 45%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+.habili-icons img {
+  background: #1b1716;
+  border-radius: 50%;
+  height: 8.5rem;
+  width: 8.5rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.exp-div {
+  display: flex;
+  padding: 1.5rem;
+  gap: 6.5rem;
+}
+.bor-div {
+  border-top: 0.2rem solid #212121;
+  border-bottom: 0.2rem solid #212121;
+}
+.examples {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 1.5rem;
+}
+.examples img {
+  height: 25.8rem;
+  width: 34.5rem;
+}
+section {
+  margin-bottom: 8rem;
+}
+main {
+  min-width: 35rem;
+}
+.cont-icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.cont-icons img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  border: 0.2rem solid white;
+  padding: 1.5rem;
+}
+span {
+  color: var(--paragraph);
+}
+h4 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.heart {
+  color: red;
+}
+.heart:hover {
+  color: #e91e63;
+  cursor: cell;
+}
+
+@media (min-width: 950px) {
+  #menu-icon {
+    display: none;
+  }
+  header {
+    height: 9rem;
+    margin-bottom: 7rem;
+  }
+  .active {
+    transform: translate(0);
+  }
+  .menu-list {
+    box-shadow: none;
+    height: 100%;
+    position: static;
+    width: 100%;
+    transition: none;
+    z-index: 0;
+    padding: 3.5rem 13rem;
+  }
+  .menu-list ul {
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    gap: 5rem;
+  }
+  .menu-list ul li {
+    display: inline;
+    padding: 0;
+    font-size: 2rem;
+  }
+  .menu-list ul li:hover {
+    background: inherit;
+  }
+  .menu-list ul li a {
+    /* font-family: cursive; */
+    display: inline;
+  }
+  a:hover {
+    color: #e91e63;
+  }
+  .me {
+    height: 35rem;
+  }
+  h1 {
+    font-size: 8.5rem;
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    text-align: center !important;
+  }
+  h3 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  .info {
+    width: 70%;
+    margin: auto;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    margin-bottom: 6.5rem;
+  }
+  .icons img {
+    height: 7.5rem;
+  }
+  .about-me {
+    padding: 0 0rem;
+  }
+  .me-text {
+    /* padding: 0 35rem; */
+    width: 50%;
+    margin: auto;
+  }
+  .habili-icons {
+    width: 100%;
+    display: grid;
+    gap: 7rem 14rem;
+    grid-template-columns: 25rem 25rem;
+    grid-template-rows: 16.5rem 16.5rem;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  .habili-icons img {
+    height: 12.7rem;
+    width: 12.7rem;
+    padding: 2rem;
+  }
+  .icon {
+    max-width: 25rem;
+  }
+  .icon p {
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .exp-div {
+    gap: 18rem;
+    width: 50%;
+    margin: auto;
+  }
+  .examples {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem;
+    margin-top: 3rem;
+  }
+  .examples img {
+    height: 25.8rem;
+    width: 28%;
+    max-width: 34.5rem;
+  }
+  .circunferencia {
+    width: 14rem;
+  }
+  .circle1 {
+    max-width: 75%;
+  }
+  .circle2 {
+    left: -8rem;
+  }
+  .caja {
+    padding: 1.2rem;
+  }
+
+  .c1 {
+    height: 19.5rem;
+    width: 19.5rem;
+  }
+  .c2 {
+    height: 16.5rem;
+    width: 16.5rem;
+  }
+  .c3 {
+    height: 14rem;
+    width: 14rem;
+  }
+  .cont-icons {
+    justify-content: center;
+    gap: 5rem;
+  }
+  .cont-icons div p {
+    margin: 1rem;
+    font-size: 1.8rem;
+    color: var(--titles);
+  }
+  .cont-icons img {
+    height: 10rem;
+    width: 10rem;
+    padding: 2rem;
+  }
+}
