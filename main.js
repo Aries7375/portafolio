@@ -1,18 +1,18 @@
 const iconMenu = document.querySelector("#menu-icon");
-menu = document.querySelector("#menu");
+const menu = document.querySelector("#menu");
 const body = document.querySelector("body");
 
-iconMenu.addEventListener("click", (i) => {
+iconMenu.addEventListener("click", () => {
   menu.classList.toggle("active");
-  document.body.classList.toggle("opacity");
-  const rutaActual = i.target.getAttribute("src");
+  body.classList.toggle("opacity");
   body.classList.toggle("no-scroll");
 });
 
-function function1() {
-  if (window.innerWidth <= 950) {
+const items = document.querySelector(".items");
+items.addEventListener("click", function (e) {
+  if (e.target.classList.contains("lit") && window.innerWidth <= 950) {
     menu.classList.toggle("active");
-    document.body.classList.toggle("opacity");
+    body.classList.toggle("opacity");
     body.classList.toggle("no-scroll");
   }
-}
+});
